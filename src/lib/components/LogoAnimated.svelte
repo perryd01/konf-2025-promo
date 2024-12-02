@@ -1,0 +1,29 @@
+<script lang="ts">
+  import { draw, fade } from "svelte/transition";
+
+  const shape =
+    "M35.48 1.24h-4.07v-.9a.35.35 0 0 0-.1-.24.37.37 0 0 0-.24-.1H8.44a.35.35 0 0 0-.24.1.31.31 0 0 0-.1.24v.9H2.2A2.21 2.21 0 0 0 0 3.45V49a2.2 2.2 0 0 0 2.2 2.2h36.13a2.2 2.2 0 0 0 2.21-2.2V6.84ZM8.78.69h21.94v11.93H8.78Zm-6 27.21 3.74-3.74-3.71-3.74v-5h6.65l1.76 1.75L13 15.43h6.65v5l-3.74 3.74 3.74 3.74v5H13l-1.74-1.75-1.79 1.73H2.81Zm34.95 20.5H2.81v-6.46h34.92Zm0-7.75H2.81v-6.47h34.92Zm0-20.23L34 24.16l3.74 3.74v5h-6.67l-1.75-1.75-1.75 1.75h-6.66v-5l3.74-3.74-3.74-3.74v-5h6.66l1.75 1.75 1.76-1.75h6.65Z";
+</script>
+
+<svg
+  class="size-full fill-primary-light"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 45.54 51.21"
+  fill="none"
+>
+  <g data-name="Layer 2">
+    <g data-name="Layer 1">
+      <path
+        in:fade={{ duration: 400, delay: 1600 }}
+        d="M24.4 1.41v10.14h5.24V1.41Zm0 0v10.14h5.24V1.41Z"
+      />
+      <path
+        class="stroke-primary-light stroke-1"
+        fill="none"
+        in:draw={{ duration: 2000 }}
+        d={shape}
+      />
+      <path in:fade={{ duration: 400, delay: 1600 }} d={shape} />
+    </g>
+  </g>
+</svg>

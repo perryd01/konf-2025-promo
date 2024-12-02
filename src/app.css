@@ -1,0 +1,11 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'Cy Grotesk';
+  src: url('/cy-grotesk.otf') format('opentype');
+  font-weight: normal; /* Adjust as necessary */
+  font-style: normal;  /* Adjust as necessary */
+}
+  
